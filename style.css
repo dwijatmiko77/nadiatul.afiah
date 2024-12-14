@@ -1,153 +1,102 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sofia&display=swap');
 
-    font-family        : Arial, Helvetica, sans-serif;
+
+* {
+    font-family        : "sofia", sans-serif;
     background-position: top;
     background-size    : 100%;
     overflow-x         : hidden;
 }
 
 body {
-    background-image   : url(media/nadia.PNG);
+    background-image: url(media/nadia.PNG);
+    display         : flex;
+}
+
+.section {
+    background-color: rgba(0, 0, 0, 0.611);
 }
 
 h1.judul {
-    padding-top   : 5rem;
-    text-align    : center;
-    color         : aqua;
-    position      : relative;
-    background    : transparent;
-    box-sizing    : border-box;
-    padding-bottom: 2rem;
+    padding-top       : 3rem;
+    text-align        : center;
+    color             : aqua;
+    position          : relative;
+    background        : transparent;
+    box-sizing        : border-box;
+    padding-bottom    : 2rem;
+    animation-duration: 2s;
+    animation         : animation 3s forwards;
+}
+
+strong {
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0 0 10px #00ffff;
+}
+
+.content {
+    padding-left   : 10px;
+    padding-right  : 10px;
 }
 
 .content h2 {
-
-    /* position     : relative; */
-    background   : transparent;
-    /* color     : transparent; */
-    color        : white;
-    /* text-align: center; */
+    color         : white;
+    overflow      : hidden;
+    background    : transparent;
+    text-shadow   : 0 0 10px #ffffff;
+    padding-bottom: 10px;
+    animation     : animation 3s forwards;
+    opacity       : 0;
 }
 
-h2.span1::before {
-    content   : '';
-    position  : absolute;
-    background: transparent;
-    top       : 0;
-    bottom    : 0;
-    left      : 0;
-    right     : 0;
-}
-
-h2.span2::before {
-    content   : '';
-    position  : absolute;
-    background: transparent;
-    top       : 0;
-    bottom    : 0;
-    left      : 0;
-    right     : 0;
-}
-
-h2.span3::before {
-    content   : '';
-    position  : absolute;
-    background: transparent;
-    top       : 0;
-    bottom    : 0;
-    left      : 0;
-    right     : 0;
-}
-
-h2.span4::before {
-    content   : '';
-    position  : absolute;
-    background: transparent;
-    top       : 0;
-    bottom    : 0;
-    left      : 0;
-    right     : 0;
-}
-
-h2.span5::before {
-    content   : '';
-    position  : absolute;
-    background: transparent;
-    top       : 0;
-    bottom    : 0;
-    left      : 0;
-    right     : 0;
-}
-
-h2.span6::before {
-    content   : '';
-    position  : absolute;
-    background: transparent;
-    top       : 0;
-    bottom    : 0;
-    left      : 0;
-    right     : 0;
-}
-
-h2.span7::before {
-    content   : '';
-    position  : absolute;
-    background: transparent;
-    top       : 0;
-    bottom    : 0;
-    left      : 0;
-    right     : 0;
-}
-
-h2.span1::before {
-    background: white;
-    animation : create 3s ease forwards;
-}
-
-h2.span2::before {
-    background        : white;
-    animation         : create 3s ease forwards;
+h2.span1 {
     animation-duration: 3s;
-    animation-delay   : 3s;
+    animation-delay   : 2s;
 }
 
-h2.span3::before {
-    background        : white;
-    animation         : create 3s ease forwards;
+h2.span2 {
     animation-duration: 3s;
-    animation-delay   : 6s;
+    animation-delay   : 4s;
 }
 
-h2.span4::before {
-    background        : white;
-    animation         : create 3s ease forwards;
+h2.span3 {
     animation-duration: 3s;
-    animation-delay   : 9s;
+    animation-delay   : 7s;
 }
 
-h2.span5::before {
-    background        : white;
-    animation         : create 3s ease forwards;
+h2.span4 {
     animation-duration: 3s;
-    animation-delay   : 12s;
+    animation-delay   : 10s;
 }
 
-h2.span6::before {
-    background        : white;
-    animation         : create 3s ease forwards;
+h2.span5 {
     animation-duration: 3s;
-    animation-delay   : 15s;
+    animation-delay   : 13s;
 }
 
-h2.span7::before {
-    background        : white;
-    animation         : create 3s ease forwards;
+h2.span6 {
     animation-duration: 3s;
-    animation-delay   : 18s;
+    animation-delay   : 16s;
 }
 
-@-webkit-keyframes create {
-    to {
-        left: 100%;
+h2.span7 {
+    animation-duration: 3s;
+    animation-delay   : 19s;
+}
+
+
+@keyframes animation {
+    from {
+        opacity: 0%;
     }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+.btn {
+    animation-delay    : 22s;
+    animation-duration : 3s;
+    transition-duration: 4s;
 }
