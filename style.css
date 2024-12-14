@@ -1,0 +1,80 @@
+* {
+
+    font-family        : Arial, Helvetica, sans-serif;
+    background-image   : url(media/nadia.PNG);
+    background-position: top;
+    background-size    : 100%;
+    overflow           : hidden;
+}
+
+section {
+    padding-top: 5rem;
+}
+
+h1 {
+    text-align: center;
+    color: aqua;
+    position     : relative;
+    background   : transparent;
+    padding-bottom: 2rem;
+}
+
+h2 {
+    position     : relative;
+    background   : transparent;
+    /* color     : transparent; */
+    color        : white;
+    /* text-align: center; */
+}
+
+h2.span1::before {
+    content : '';
+    position: absolute;
+    top     : 0;
+    bottom  : 0;
+    left    : 0;
+    right   : 0;
+}
+
+h2.span2::before {
+    content : '';
+    position: absolute;
+    top     : 0;
+    bottom  : 0;
+    left    : 0;
+    right   : 0;
+}
+
+h2.span3::before {
+    content : '';
+    position: absolute;
+    top     : 0;
+    bottom  : 0;
+    left    : 0;
+    right   : 0;
+}
+
+h2.span1::before {
+    background: white;
+    animation : create 3s ease forwards;
+}
+
+h2.span2::before {
+    background: white;
+    animation : create 3s ease forwards;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+
+h2.span3::before {
+    background: white;
+    animation : create 3s ease forwards;
+    animation-duration: 3s;
+    animation-delay: 6s;
+}
+
+@-webkit-keyframes create {
+    to {
+        left: 100%;
+    }
+}
