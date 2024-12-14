@@ -15,6 +15,7 @@ body {
 
 .section {
     background-color: rgba(0, 0, 0, 0.611);
+    width           : 100%;
 }
 
 h1.judul {
@@ -129,4 +130,5 @@ h2.span8 {
     animation-delay    : 25s;
     animation-duration : 3s;
     transition-duration: 3s;
+    margin-bottom      : 1rem;
 }
