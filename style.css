@@ -7,20 +7,18 @@
     overflow           : hidden;
 }
 
-section {
-    padding-top: 5rem;
-}
-
 h1 {
-    text-align: center;
-    color: aqua;
-    position     : relative;
-    background   : transparent;
+    padding-top   : 5rem;
+    text-align    : center;
+    color         : aqua;
+    position      : relative;
+    background    : transparent;
+    box-sizing    : border-box;
     padding-bottom: 2rem;
 }
 
 h2 {
-    position     : relative;
+    /* position     : relative; */
     background   : transparent;
     /* color     : transparent; */
     color        : white;
@@ -28,30 +26,33 @@ h2 {
 }
 
 h2.span1::before {
-    content : '';
-    position: absolute;
-    top     : 0;
-    bottom  : 0;
-    left    : 0;
-    right   : 0;
+    content   : '';
+    position  : absolute;
+    background: transparent;
+    top       : 0;
+    bottom    : 0;
+    left      : 0;
+    right     : 0;
 }
 
 h2.span2::before {
-    content : '';
-    position: absolute;
-    top     : 0;
-    bottom  : 0;
-    left    : 0;
-    right   : 0;
+    content   : '';
+    position  : absolute;
+    background: transparent;
+    top       : 0;
+    bottom    : 0;
+    left      : 0;
+    right     : 0;
 }
 
 h2.span3::before {
-    content : '';
-    position: absolute;
-    top     : 0;
-    bottom  : 0;
-    left    : 0;
-    right   : 0;
+    content   : '';
+    position  : absolute;
+    background: transparent;
+    top       : 0;
+    bottom    : 0;
+    left      : 0;
+    right     : 0;
 }
 
 h2.span1::before {
@@ -60,17 +61,17 @@ h2.span1::before {
 }
 
 h2.span2::before {
-    background: white;
-    animation : create 3s ease forwards;
+    background        : white;
+    animation         : create 3s ease forwards;
     animation-duration: 3s;
-    animation-delay: 3s;
+    animation-delay   : 3s;
 }
 
 h2.span3::before {
-    background: white;
-    animation : create 3s ease forwards;
+    background        : white;
+    animation         : create 3s ease forwards;
     animation-duration: 3s;
-    animation-delay: 6s;
+    animation-delay   : 6s;
 }
 
 @-webkit-keyframes create {
